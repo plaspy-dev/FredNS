@@ -1,0 +1,12 @@
+/out/
+**/bin/
+**/obj/
+**/build/
+**/dist/
+**/.vs/
+*.user
+*.suo
+*.class
+/Web.config
+/web.config
+/App_Data/

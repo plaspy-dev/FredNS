@@ -1,0 +1,188 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ingreso.master.cs" Inherits="ingreso" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="Title" content="freDNS - DNS Gratis"/>
+    <meta name="Author" content="SDG LTDA"/>
+    <meta name="Subject" content="DNS Gratis"/>
+    <meta name="Generator" content="Flash, HTML"/>
+    <meta name="Language" content="Spanish"/>
+    <meta name="Revisit" content="1 day"/>
+    <meta name="Distribution" content="Global"/>
+    <meta name="Robots" content="All"/>
+    <title>freDNS - DNS Gratis</title>
+    <script type="text/javascript">
+        function renewSession() {
+            var img = document.getElementById("renewSession");
+            if (img) {
+                img.src = "renewSes.aspx?par=" + Math.random();
+                window.setTimeout("renewSession();", 180000);
+            }
+        }
+        function oncargar() {
+            window.setTimeout("renewSession();", 180000);
+        }
+    </script>
+    <link href="css/estilos.css" type="text/css" rel="Stylesheet" />
+</head>
+<body bgcolor="#ffffff" link="#FE9900" vlink="#666666" alink="#FE9900" onload="oncargar()">
+<table width="911" border="0" align="center" cellpadding="0" cellspacing="0">
+<!-- fwtable fwsrc="originalTemplateSDG.png" fwpage="Página 1" fwbase="template.jpg" fwstyle="Dreamweaver" fwdocid = "528861927" fwnested="0" -->
+  <tr>
+   <td><img id="Img1" runat="server" src="~/img/spacer.gif" width="2" height="1" border="0" alt="" /></td>
+   <td><img id="Img2" runat="server" src="~/img/spacer.gif" width="30" height="1" border="0" alt="" /></td>
+   <td><img id="Img3" runat="server" src="~/img/spacer.gif" width="233" height="1" border="0" alt="" /></td>
+   <td><img id="Img4" runat="server" src="~/img/spacer.gif" width="621" height="1" border="0" alt="" /></td>
+   <td><img id="Img5" runat="server" src="~/img/spacer.gif" width="22" height="1" border="0" alt="" /></td>
+   <td><img id="Img6" runat="server" src="~/img/spacer.gif" width="3" height="1" border="0" alt="" /></td>
+   <td><img id="Img7" runat="server" src="~/img/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td colspan="3" style="background-image: url('/main/img/template_r1_c1.jpg')">
+       <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/">
+       <asp:Image ID="Image1" runat="server" ImageUrl="~/swf/logo.png" meta:resourcekey="Image1Resource1" />
+        </asp:HyperLink>
+   </td>
+   <td colspan="3" style="background-image: url('/main/img/template_r1_c4.jpg')">
+       <table style="width: 100%;">
+           <tr>
+               <td align="left">
+       <asp:Label ID="LUsuario" runat="server" ForeColor="#666666" 
+                       meta:resourcekey="LUsuarioResource1"></asp:Label>
+               </td>
+               <td align="right">
+           <asp:Label ID="LEstadisticas" runat="server" ForeColor="#666666" 
+                       meta:resourcekey="LEstadisticasResource1"></asp:Label>
+               </td>
+           </tr>
+       </table>
+      </td>
+   <td><img id="Img8" runat="server" src="~/img/spacer.gif" width="1" height="86" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td style="background-image: url('/main/img/template_r2_c1.jpg')"></td>
+   <td colspan="4" valign="top" bgcolor="#F1F1F1">
+       <table style="width: 100%;">
+           <tr>
+               <td>
+               <div id="header">
+                  <ul>
+                    <li>
+                       <asp:HyperLink ID="HDominios" runat="server" NavigateUrl="~/dominios.aspx" 
+                            meta:resourcekey="HDominiosResource1">Mis dominios</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HPerfil" runat="server" NavigateUrl="~/perfil.aspx" 
+                            meta:resourcekey="HPerfilResource1">Información personal</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HSalir" runat="server" NavigateUrl="~/Default.aspx?end=1" 
+                            meta:resourcekey="HSalirResource1">Salir</asp:HyperLink></li>
+                  </ul>
+                </div>
+               </td>
+           </tr>
+           <tr>
+               <td>
+               <table style="width: 100%;">
+               <tr>
+                   <td>
+                   <script type="text/javascript"><!--
+                       google_ad_client = "pub-7406246405928312";
+                       /* 728x15, creado 12/04/10 */
+                       google_ad_slot = "4807312264";
+                       google_ad_width = 728;
+                       google_ad_height = 15;
+                    //-->
+                    </script>
+                    
+                   </td>
+                   <td>
+                        <asp:HyperLink ID="HEspanol" runat="server" 
+                            NavigateUrl="~/Default.aspx?lang=es">
+                            <asp:Image ID="Image2" runat="server" ImageUrl="~/img/espanol.gif" meta:resourcekey="Image2Resource1" />
+</asp:HyperLink>
+                   </td>
+                   <td>
+                        <asp:HyperLink ID="HIngles" runat="server" NavigateUrl="~/Default.aspx?lang=en">
+                        <asp:Image ID="Image3" runat="server" ImageUrl="~/img/ingles.gif" meta:resourcekey="Image3Resource1" />
+</asp:HyperLink>
+                   </td>
+               </tr>
+               </table>
+               </td>
+           </tr>
+       </table>       
+   </td>
+   <td style="background-image: url('/main/img/template_r2_c6.jpg')"></td>
+   <td><img id="Img9" runat="server" src="~/img/spacer.gif" width="1" height="73" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td colspan="2" style="background-image: url('/main/img/template_r3_c1.jpg')"></td>
+   <td colspan="2" style="background-image: url('/main/img/template_r3_c3.jpg')" align="right">
+       <br />
+         <asp:Label ID="Titulo" runat="server" CssClass="titulo" 
+           meta:resourcekey="TituloResource1"></asp:Label>
+       <br />
+      </td>
+   <td colspan="2" style="background-image: url('/main/img/template_r3_c5.jpg')"></td>
+   <td style="background-image: url('/main/img/spacer.gif')"><img id="Img10" runat="server" src="~/img/spacer.gif" width="1" height="49" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td colspan="2" style="background-image: url('/main/img/template_r4_c1.jpg')"></td>
+   <td colspan="2" valign="top" style="background-image: url('/main/img/template_r4_c3.jpg')" bgcolor="#FFFFFF" class="centro">
+   <asp:HyperLink ID="HPadre" runat="server" CssClass="titulo" Visible="False" 
+           meta:resourcekey="HPadreResource1">[HPadre]</asp:HyperLink>
+   <form id="form1" runat="server">
+   <br />
+    <div class="texto">
+    <table border="0" width="100%">
+      <tr>
+        <td>&nbsp;</td>
+        <td valign="top" align="left"><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder></td>
+        <td align="right"><script type="text/javascript"><!--
+                              google_ad_client = "pub-7406246405928312";
+                              google_ad_width = 120;
+                              google_ad_height = 600;
+                              google_ad_format = "120x600_as";
+                              google_ad_type = "text_image";
+                              google_ad_channel = "";
+                              google_ui_features = "rc:10";
+                              google_color_border = "FFFFFF";
+                              google_color_bg = "FFFFFF";
+                              google_color_link = "FE9900";
+                              google_color_text = "000000";
+                              google_color_url = "FE9900";
+//-->
+</script>
+
+</td>
+      </tr>
+    </table>
+    </div>
+   </form>
+   </td>
+   <td colspan="2" style="background-image: url('/main/img/template_r4_c5.jpg')"></td>
+   <td style="background-image: url('/main/img/spacer.gif')"></td>
+  </tr>
+  <tr>
+   <td colspan="2" style="background-image: url('/main/img/template_r5_c1.jpg')"></td>
+   <td colspan="2" style="background-image: url('/main/img/template_r5_c3.jpg')"></td>
+   <td colspan="2" style="background-image: url('/main/img/template_r5_c5.jpg')"></td>
+   <td><img id="Img11" runat="server" src="~/img/spacer.gif" width="1" height="61" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td colspan="6" style="background-image: url('/main/img/template_r6_c1.jpg')" bgcolor="#FFFFFF" class="abajo"><a href="http://example.invalid" target="_blank">Software Developers Group</a> Ltda. Bogotá, Colombia.<a href="mailto:demo@example.invalid">demo@example.invalid</a>&nbsp;&nbsp;&nbsp;</td>
+   <td><img id="Img12" runat="server" src="~/img/spacer.gif" width="1" height="38" border="0" alt="" /></td>
+  </tr>
+</table>
+<img src="renewSes.aspx" name="renewSession" id="renewSession" style="display: none"/>
+
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-1686386-2");
+        pageTracker._trackPageview();
+    } catch (err) { }</script>
+</body>
+</html>
